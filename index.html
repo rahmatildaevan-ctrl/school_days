@@ -41,6 +41,7 @@
         </section>
 
         <section id="timetable">
+            
             <h2>Расписание Уроков</h2>
             <p>Выберите день недели, чтобы посмотреть расписание:</p>
             <div class="day-selector">
@@ -95,6 +96,70 @@
     <script src="script.js"></script>
 </body>
 </html>
-<Почта:rahmatildaevan@gmail.com>
-<telegram:nurkyz>
-<Номер телефона:0558240117>
+<section id="contacts">
+    <h2>Наши контакты</h2>
+    <div class="contact-wrapper">
+        <div class="contact-item">
+            <span class="icon">📞</span>
+            <a href="tel:0558240117">0708240117</a>
+        </div>
+        <div class="contact-item">
+            <span class="icon">📧</span>
+            <a href="mailto:school-rahmatildaevan@gmail.com">school-info@example.com</a>
+        </div>
+        <div class="contact-item">
+            <span class="icon">✈️</span>
+            <a href="https://t.me/school_project_channel" target="_blank">@school_project_channel</a>
+        </div>
+    </div>
+</section>/* Стили для блока контактов */
+#contacts {
+    text-align: center;
+    background-color: var(--white);
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    background: #e2e8f0;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-item .icon {
+    font-size: 1.4rem;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 600px) {
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
